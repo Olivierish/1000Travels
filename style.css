@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.app-container {
+    background: #f3f3ff;
+    min-height: 940px;
+    width: 100%;
+    height: 100vh;
+}
+
+.circle {
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(to bottom, #d1a037 40%, #ebcb2b 50%);
+    filter: blur(120px);
+    opacity: 100%;
+}
+
+.app-color-yellow {
+    color: #FFA41D;
+}
+
+.app-color-black {
+    color: #292B48;
+}
+
+.app-color-gray {
+    color: #877F95;
+}
+
+.app-color-lavendar {
+    color: #9EA1CF;
+}
+
+.app-bg-lavendar {
+    background: #D5D7FF;
+
+}
+
+.app-bg-light-white {
+    background: #F7F8FF;
+}
+
+.app-bg-light-white-2 {
+    background: #EFF2FC;
+}
+
+.app-shadow {
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.03);
+}
+
+.app-title {
+    background: linear-gradient(45deg, #d1a037, #ebcb2b);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+span.active {
+    position: relative;
+    color: #292b48;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+span.active::after {
+    content: '';
+    width: 200%;
+    height: 2px;
+    background: #292b48;
+    position: absolute;
+    bottom: -20px;
+}
+
+.switch-checkbox {
+    display: none;
+}
+
+.switch {
+    position: relative;
+}
+
+.switch-bg {
+    height: 24px;
+    width: 44px;
+    background: #d1a037;
+    border-radius: 15px;
+}
+
+.switch-indicator {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: #d1a037;
+    border: 5px solid white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: .2s ease-out;
+}
+
+.switch-checkbox:checked~.switch-indicator {
+    transform: translateX(100%);
+}
+
